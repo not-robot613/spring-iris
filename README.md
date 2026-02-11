@@ -641,5 +641,8 @@ ReplyClient → 응답 전송
 - **간단한 파라미터** - `room`, `sender`, `msg` 3개만 집중
 
 ## 라이선스
-
 MIT License
+
+## 참조
+- [irispy-client](https://github.com/dolidolih/irispy-client) by @dolidolih
+- [node-iris](https://github.com/SYNCATE-CORE/node-iris) by @SYNCATE-CORE
