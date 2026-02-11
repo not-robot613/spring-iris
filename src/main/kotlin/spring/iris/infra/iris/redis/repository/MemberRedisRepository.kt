@@ -1,11 +1,11 @@
-package spring.iris.infra.redis.repository
+package spring.iris.infra.iris.redis.repository
 
 import org.springframework.data.repository.CrudRepository
 import org.springframework.stereotype.Repository
-import spring.iris.infra.redis.model.entity.Room
+import spring.iris.infra.iris.redis.model.entity.Member
 
 @Repository
-interface RoomRedisRepository : CrudRepository<Room, Long> {
+interface MemberRedisRepository : CrudRepository<Member, Long> {
 
     override fun existsById(id: Long): Boolean
 

@@ -17,10 +17,10 @@ import spring.iris.infra.message.dto.internal.ChatData
 import spring.iris.infra.message.dto.internal.MemberDTO
 import spring.iris.infra.message.dto.internal.MessageDTO
 import spring.iris.infra.message.dto.internal.RoomDTO
-import spring.iris.infra.redis.model.entity.Member
-import spring.iris.infra.redis.model.entity.Room
-import spring.iris.infra.redis.service.MemberRedisService
-import spring.iris.infra.redis.service.RoomRedisService
+import spring.iris.infra.iris.redis.model.entity.Member
+import spring.iris.infra.iris.redis.model.entity.Room
+import spring.iris.infra.iris.redis.service.MemberRedisService
+import spring.iris.infra.iris.redis.service.RoomRedisService
 import spring.iris.infra.util.TimeUtil
 
 @Service

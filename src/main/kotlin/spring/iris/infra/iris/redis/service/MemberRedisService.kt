@@ -1,11 +1,11 @@
-package spring.iris.infra.redis.service
+package spring.iris.infra.iris.redis.service
 
 
 import mu.KotlinLogging
 import org.springframework.stereotype.Service
-import spring.iris.infra.redis.exception.DataAlreadyHereException
-import spring.iris.infra.redis.model.entity.Member
-import spring.iris.infra.redis.repository.MemberRedisRepository
+import spring.iris.infra.iris.redis.exception.DataAlreadyHereException
+import spring.iris.infra.iris.redis.model.entity.Member
+import spring.iris.infra.iris.redis.repository.MemberRedisRepository
 
 private val logger = KotlinLogging.logger {}
 

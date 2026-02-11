@@ -1,12 +1,12 @@
-package spring.iris.infra.redis.service
+package spring.iris.infra.iris.redis.service
 
 
 import mu.KotlinLogging
 import org.springframework.stereotype.Service
 import spring.iris.common.enums.RoomType
-import spring.iris.infra.redis.exception.DataAlreadyHereException
-import spring.iris.infra.redis.model.entity.Room
-import spring.iris.infra.redis.repository.RoomRedisRepository
+import spring.iris.infra.iris.redis.exception.DataAlreadyHereException
+import spring.iris.infra.iris.redis.model.entity.Room
+import spring.iris.infra.iris.redis.repository.RoomRedisRepository
 import kotlin.jvm.optionals.getOrNull
 
 private val logger = KotlinLogging.logger {}
@@ -27,13 +27,7 @@ class RoomRedisService(
     }
 
     fun getRoomTypeById(id: Long): RoomType? {
-        val room = roomRedisRepository.findById(id).getOrNull()
-
-        return room?.let {
-            roomRedisRepository.save(it)
-            it.type
-        }
-
+        return roomRedisRepository.findById(id).getOrNull()?.type
     }
 
 }
